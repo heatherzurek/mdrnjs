@@ -5,17 +5,17 @@
 //variables store a value
 //that you can use in the file
 
-let age = 25;
-let year = 2019;
+// let age = 25;
+// let year = 2019;
 //this value is now stored in memory
 //we can access it later since its stored in memory
-// console.log(age, year);
-age = 30;
-const points = 100;
+// // console.log(age, year);
+// age = 30;
+// const points = 100;
 
 //we use a const if we dont want the value to change
 
-var score = 75;
+// var score = 75;
 
 //variables cannot start with a number
 //reserved keywords we cant use: let, const
@@ -78,8 +78,7 @@ console.log(10/2);
 //order of operation - dictates how we preform calculations
 // B I D M A S Bracekets Indices Division Multiplation Addition Subtraction
 
-let result = 5 * (10-3)**2;
-console.log(result);
+// let result = 5 * (10-3)**2;
 
 let likes = 10;
 
@@ -91,4 +90,66 @@ likes -= 5;
 likes *= 2;
 likes /= 2;
 //shorthand operation is the same as likes = likes + 1; 
-console.log(likes);
+// console.log(likes);
+
+//NaN - not a number
+
+// let result = 'the blog has ' + likes + ' likes';
+
+//template string lets us inject variables 
+const title = 'Best reads of 2019';
+const author = 'Mario';
+
+//concatenation way
+// let result = 'The blog called ' + title + ' by '+ author + ' has ' + likes + ' likes';
+
+//template strings (template literal)
+let templitresult = `The blog called ${title} by ${author} has ${likes} likes`;
+console.log(templitresult);
+
+//creating html templates
+let html = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This blog has ${likes} likes</span>
+`
+console.log(html);
+
+//arrays store collections of things
+//[] array syntax
+let ninjas = ['Donatello', 'Raphael', 'Michelangelo', 'Leonardo da Vinci'];
+// ninjas[1] = 'Casey Jones';
+// console.log(ninjas[1]);
+
+let ages = [29, 32, 36];
+console.log(ages[2]);
+
+let random = ['Desmond', 6, 'Heather', 29, 'Bryan', 32];
+console.log(random);
+
+// console.log(ninjas.length);
+
+//array methods
+// let result = ninjas.join(', ')
+// let result = ninjas.indexOf('Casey Jones');
+// let result = ninjas.concat(['Splinter', 'April']);
+// let result = ninjas.push('TMNT')
+//push returns the length of the new array
+//destructive method
+// let result = ninjas.pop();
+// console.log(result);
+
+//null and undefined both represents a complete lack of value
+// let age = null;
+//null is intentional lack of value
+// console.log(age, age + 3, `the age is ${age}`);
+//browser automatically assigns the value undefined when it doesnt have one
+
+//booleans and comparisons
+console.log(true, false);
+
+let emails = 'heather.zurek@gmail.com';
+let names = ['heather', 'desmond', 'bryan'];
+let result = names.includes('desmond');
+//.includes returns a boolean
+console.log(result);
