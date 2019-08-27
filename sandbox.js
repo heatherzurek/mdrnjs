@@ -187,5 +187,10 @@ console.log(typeof score);
 // let result = Number('hello');
 // console.log(result);
 
-let result = String(50);
+// let result = String(50);
+let result = Boolean(0);
 console.log(result, typeof result);
+//this is a truthy value
+//positive numbers are truthy, minus numbers are also truthy but 0 is false in type conversion
+//strings are all truthy
+//empty string of no length are falsey
