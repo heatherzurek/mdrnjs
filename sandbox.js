@@ -150,6 +150,42 @@ console.log(true, false);
 
 let emails = 'heather.zurek@gmail.com';
 let names = ['heather', 'desmond', 'bryan'];
-let result = names.includes('desmond');
+// let result = names.includes('desmond');
 //.includes returns a boolean
-console.log(result);
+// console.log(result);
+
+let myAge = 29;
+//comparison operators all return booleans
+// console.log(myAge == 29);
+// console.log(myAge == 30);
+// console.log(myAge != 30);
+// console.log(myAge > 20);
+// console.log(myAge < 30);
+// console.log(myAge <= 29);
+// console.log(myAge >= 30);
+let myName = 'heather';
+// console.log(myName == 'heather');
+// console.log(myName > 'al');
+//abstract equality or loose equality
+//== is loose comparison which means different types can be equal
+console.log(myAge != '29');
+
+
+//= sets value
+//== asks if 2 things are the same
+//returns boolean
+//strict equality is === 
+//checking if its the same value or type
+
+//type conversion
+let score = '100';
+let score2 = '200';
+score = Number(score);
+console.log(score + 1);
+console.log(typeof score);
+
+// let result = Number('hello');
+// console.log(result);
+
+let result = String(50);
+console.log(result, typeof result);
