@@ -194,3 +194,74 @@ console.log(result, typeof result);
 //positive numbers are truthy, minus numbers are also truthy but 0 is false in type conversion
 //strings are all truthy
 //empty string of no length are falsey
+
+//CONTROL FLOW
+//use conditional statements for checking conditions
+
+//for loops
+// for(let i = 0; i < 5; i++){
+//     console.log('in loop:', i);
+// }
+// console.log('loop finished')
+//space between the {} is a "code block"
+//let i = 0; is the initialization variable
+//i < 5 is the condiiton
+//i++ is the final expression, executes every time at the end of the code block
+
+const names = ['Petunia', 'Penelope', 'Penny'];
+
+for(let i = 0; i < names.length; i++){
+    // console.log(names[i]);
+    let html = `<div>${names[i]}</div>`
+    console.log(html);
+}
+
+//for as long as [i] is less than that value were going to cycle through it
+
+//cycling through an array as iteration
+//each iteration is one cycle through
+
+//we dont initialize i in a while loop
+//it must already exist
+
+// let i = 0;
+
+// while(i < 5){
+//     console.log('in while loop', i);
+//     i++;
+// }
+
+// let i = 0;
+// while(i < names.length){
+//     console.log(names[i]);
+//     i++;
+// }
+
+//DO WHILE LOOP
+// let i = 3; 
+
+// do{
+//     console.log('val of i is: ', i);
+//     i++;
+// } while(i < 5);
+
+// //IF STATEMENTS OR CONDITIONAL STATEMENTS
+// const age = 20;
+
+// if(age >= 20){
+//     console.log('you are over 20 years old');
+// }
+
+// const ninjas = ['Michaelangelo', 'Donatello', 'Leonardo', 'Raphael'];
+
+// if(ninjas.length > 3){
+//     console.log("that's a lot of ninjas");
+// }
+
+const password = 'p@ssw0rd';
+
+if(password.length >= 8 && password.includes('5')){
+    console.log('That password is long enough, yay!');
+} else {
+    console.log('Your password needs to be 8 characters long and have an @ symbol');
+} 
