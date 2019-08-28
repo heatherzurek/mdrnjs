@@ -265,3 +265,90 @@ if(password.length >= 8 && password.includes('5')){
 } else {
     console.log('Your password needs to be 8 characters long and have an @ symbol');
 } 
+
+// //control flow continued
+// //logical opertators - OR || and AND &&
+
+// const password = 'pf@s25';
+
+// if (password.length >= 12 && password.includes('@')){
+//     console.log('that password is mighty strong'); 
+// } else if (password.length >= 8 || password.includes('@') && password.length > 5){
+//     console.log('that password is strong enough');
+// } else {
+//     console.log('password is not strong enough');
+// }
+
+// //logical NOT (!)
+
+// let user = false;
+
+// if(!user){
+//     console.log('you must be logged in to continue');
+// }
+
+// console.log(!true);
+// console.log(!false);
+
+const scores = [50, 25, 0, 30, 100, 20, 10];
+
+
+for(let i = 0; i <scores.length; i++){
+    
+    if(scores[i] === 0) {
+        continue;
+    }
+
+    console.log('your score: ', scores[i]);
+
+    if(scores[i] === 100) {
+        console.log('Congrats, you got the top score!!');
+        break;
+    }
+}
+
+//break, breaks us out of the loop
+
+const grade = 'D';
+
+switch(grade){
+    case 'A':
+    console.log('You got an A');
+    break;
+    case 'B':
+    console.log('You got an B');
+    break;
+    case 'C':
+    console.log('You got an C');
+    break;
+    case 'D':
+    console.log('You got an D');
+    break;
+    case 'F':
+    console.log('You got an F');
+    break;
+    default:
+    console.log('not a valid grade');
+}
+
+//switch statements use strict equality to check(type and value)
+
+//variables and block scope
+
+const age = 30; //global scope
+
+if(true){
+    //age = 30; redefining the variable
+    const age = 40; //local scope
+    const name = 'Heather'
+    console.log('inside first code black: ', age, name);
+    //nested code block takes most recently defined value
+    if(true){
+        const age = 50;
+        console.log('inside second code block: ', age);
+        var test = 'hello'; //var is not given block scope
+        //main advantage of let and const is block scope
+    }
+}
+
+console.log('outside code black: ', age, name, test);
