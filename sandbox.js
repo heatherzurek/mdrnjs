@@ -356,12 +356,28 @@ console.log('outside code black: ', age, name, test);
 //functions allow us to define a block of code
 //which we can call and execute anytime we want
 
-//function declaration
-function greet(){
-    console.log('hello there');
-}
+//FUNCTION DECLARATION
+// function greet(){
+//     console.log('hello there');
+// }
+
+//FUNCTION EXPRESSION
+//when you store a function in a variable
+//anytime you get a variable and set it equal to something
+//that is known as an expression
+//expressions need ; at the end of the codeblock
+//HOISTING IN JAVASCRIPT 
+//hoisting works with function declarations
+//but not with function expressions
+const speak = function(name){
+    console.log(`good day ${name}`);
+};
+
+
+speak('heather');
+speak();
+speak();
 
 greet();
-
-
-//function expression
+greet();
+greet();
