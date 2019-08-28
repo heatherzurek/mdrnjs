@@ -149,7 +149,7 @@ console.log(random);
 console.log(true, false);
 
 let emails = 'heather.zurek@gmail.com';
-let names = ['heather', 'desmond', 'bryan'];
+// let names = ['heather', 'desmond', 'bryan'];
 // let result = names.includes('desmond');
 //.includes returns a boolean
 // console.log(result);
@@ -168,7 +168,7 @@ let myName = 'heather';
 // console.log(myName > 'al');
 //abstract equality or loose equality
 //== is loose comparison which means different types can be equal
-console.log(myAge != '29');
+// console.log(myAge != '29');
 
 
 //= sets value
@@ -181,15 +181,15 @@ console.log(myAge != '29');
 let score = '100';
 let score2 = '200';
 score = Number(score);
-console.log(score + 1);
-console.log(typeof score);
+// console.log(score + 1);
+// console.log(typeof score);
 
 // let result = Number('hello');
 // console.log(result);
 
 // let result = String(50);
 let result = Boolean(0);
-console.log(result, typeof result);
+// console.log(result, typeof result);
 //this is a truthy value
 //positive numbers are truthy, minus numbers are also truthy but 0 is false in type conversion
 //strings are all truthy
@@ -208,13 +208,13 @@ console.log(result, typeof result);
 //i < 5 is the condiiton
 //i++ is the final expression, executes every time at the end of the code block
 
-const names = ['Petunia', 'Penelope', 'Penny'];
+// const names = ['Petunia', 'Penelope', 'Penny'];
 
-for(let i = 0; i < names.length; i++){
-    // console.log(names[i]);
-    let html = `<div>${names[i]}</div>`
-    console.log(html);
-}
+// for(let i = 0; i < names.length; i++){
+//     // console.log(names[i]);
+//     let html = `<div>${names[i]}</div>`
+//     console.log(html);
+// }
 
 //for as long as [i] is less than that value were going to cycle through it
 
@@ -352,3 +352,16 @@ if(true){
 }
 
 console.log('outside code black: ', age, name, test);
+
+//functions allow us to define a block of code
+//which we can call and execute anytime we want
+
+//function declaration
+function greet(){
+    console.log('hello there');
+}
+
+greet();
+
+
+//function expression
