@@ -309,27 +309,27 @@ for(let i = 0; i <scores.length; i++){
 
 //break, breaks us out of the loop
 
-const grade = 'D';
+// const grade = 'D';
 
-switch(grade){
-    case 'A':
-    console.log('You got an A');
-    break;
-    case 'B':
-    console.log('You got an B');
-    break;
-    case 'C':
-    console.log('You got an C');
-    break;
-    case 'D':
-    console.log('You got an D');
-    break;
-    case 'F':
-    console.log('You got an F');
-    break;
-    default:
-    console.log('not a valid grade');
-}
+// switch(grade){
+//     case 'A':
+//     console.log('You got an A');
+//     break;
+//     case 'B':
+//     console.log('You got an B');
+//     break;
+//     case 'C':
+//     console.log('You got an C');
+//     break;
+//     case 'D':
+//     console.log('You got an D');
+//     break;
+//     case 'F':
+//     console.log('You got an F');
+//     break;
+//     default:
+//     console.log('not a valid grade');
+// }
 
 //switch statements use strict equality to check(type and value)
 
@@ -341,17 +341,17 @@ if(true){
     //age = 30; redefining the variable
     const age = 40; //local scope
     const name = 'Heather'
-    console.log('inside first code black: ', age, name);
+    // console.log('inside first code black: ', age, name);
     //nested code block takes most recently defined value
     if(true){
         const age = 50;
-        console.log('inside second code block: ', age);
+        // console.log('inside second code block: ', age);
         var test = 'hello'; //var is not given block scope
         //main advantage of let and const is block scope
     }
 }
 
-console.log('outside code black: ', age, name, test);
+// console.log('outside code black: ', age, name, test);
 
 //functions allow us to define a block of code
 //which we can call and execute anytime we want
@@ -366,18 +366,16 @@ console.log('outside code black: ', age, name, test);
 //anytime you get a variable and set it equal to something
 //that is known as an expression
 //expressions need ; at the end of the codeblock
+
 //HOISTING IN JAVASCRIPT 
 //hoisting works with function declarations
 //but not with function expressions
-const speak = function(name){
-    console.log(`good day ${name}`);
+
+//name lets us recieve info by creating a local variable
+//set default parameter by name = 'moon', time = 'night'
+const speak = function(name = 'Moon', time = 'Night'){ //name is a function parameter, the order of the argument is important 
+    console.log(`Good ${time}, ${name}!`);
 };
 
-
-speak('heather');
-speak();
-speak();
-
-greet();
-greet();
-greet();
+speak('Petunia');
+//when we pass a value into a function, its known as an argument
