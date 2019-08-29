@@ -444,6 +444,47 @@ console.log(resultOne);
 
 //methods
 //method is invoked using dot notation
-
+//methods are functions but theyre functions which are assosiated with an object or data type like a string
+//theyre defined on a data type
 let resultTwo = name.toUpperCase();
 console.log(resultTwo);
+
+//CALLBACKS AND FOREACH
+
+const myFunc = (callbackFunc) => {
+    //do something
+    let value = 50;
+    callbackFunc(value);
+};
+
+myFunc(value => {
+    //do something
+    console.log(value);
+});
+
+// let people = ['Bryan', 'Heather', 'Desmond', 'Jacob', 'Tucker'];
+
+// const logPerson = (person, index) => {
+//     console.log(`${index} - Hello ${person}`)
+// }
+
+//forEach is a method that iterates over an array
+//parameter is singular of your variable
+// people.forEach(logPerson);
+
+//callbacks are a normal function that we pass into another function or another method as an argument
+
+//reference to element on the page
+const ul = document.querySelector('.people');
+
+let people = ['Bryan', 'Heather', 'Desmond', 'Jacob', 'Tucker'];
+
+let htmlOne = ``;
+
+people.forEach(function(person){
+    //create html template for each person
+    htmlOne += `<li style="color: orange">${person}</li>`;
+});
+
+console.log(htmlOne);
+ul.innerHTML = htmlOne;
