@@ -381,9 +381,69 @@ speak('Petunia');
 //when we pass a value into a function, its known as an argument
 
 //how to return values from functions
-const calcArea = function(radius){
-    return 3.14 * radius**2;
-};
+// const calcArea = function(radius){
+//     return 3.14 * radius**2;
+// };
+
+
+//arrow function
+//when you only have 1 parameter you dont have to use parenthesis (radius)
+//any more of less you need ()
+
+// const calcArea = radius => {
+//     return 3.14 * radius**2;
+// };
+
+
+//PRACTICING ARROW FUNCTIONS
+const calcArea = radius => 3.14 * radius**2;
 
 const area = calcArea(5);
-console.log(area);
+console.log('The area is: ', area);
+
+//FUNCTION EXPRESSION
+// const greet = function(){
+//     return 'hello, world';
+// };
+
+//ARROW FUNCTION VERSION
+// const greet = () => 'hello, world';
+//were returning a value thats going to be stored in greetMe
+// const greetMe = greet();
+// console.log(greetMe);
+
+// const bill = function(products, tax){
+//     let total = 0;
+//     for(let i = 0; i < products.length; i++){
+//         total += products[i] + products[i] * tax;
+//     }
+//     return total;
+// }
+
+const bill = (products, tax) => {
+    let total = 0;
+    for(let i = 0; i < products.length; i++){
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+};
+
+console.log(bill([10, 15, 30], 0.2))
+
+//a function is a block of code to do something
+//that can be invoked at any time in our code
+
+
+const name = 'heather';
+
+//functions
+const greet = () => 'hello';
+
+let resultOne = greet();
+console.log(resultOne);
+
+//methods
+//method is invoked using dot notation
+
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
