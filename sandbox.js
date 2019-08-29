@@ -481,7 +481,7 @@ let people = ['Bryan', 'Heather', 'Desmond', 'Jacob', 'Tucker'];
 
 let htmlOne = ``;
 
-people.forEach(function(person){
+people.forEach(person => {
     //create html template for each person
     htmlOne += `<li style="color: orange">${person}</li>`;
 });
