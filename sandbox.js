@@ -70,8 +70,8 @@ const pi = 3.14;
 //math operations
 // +, -, *, /, **, %
 let calc = 10 * 3.14;
-console.log(radius, pi);
-console.log(10/2);
+// console.log(radius, pi);
+// console.log(10/2);
 // let result = radius % 3;
 // let result = pi * radius**2;
 
@@ -105,7 +105,7 @@ const author = 'Mario';
 
 //template strings (template literal)
 let templitresult = `The blog called ${title} by ${author} has ${likes} likes`;
-console.log(templitresult);
+// console.log(templitresult);
 
 //creating html templates
 let html = `
@@ -113,7 +113,7 @@ let html = `
 <p>By ${author}</p>
 <span>This blog has ${likes} likes</span>
 `
-console.log(html);
+// console.log(html);
 
 //arrays store collections of things
 //[] array syntax
@@ -121,11 +121,11 @@ let ninjas = ['Donatello', 'Raphael', 'Michelangelo', 'Leonardo da Vinci'];
 // ninjas[1] = 'Casey Jones';
 // console.log(ninjas[1]);
 
-let ages = [29, 32, 36];
-console.log(ages[2]);
+// let ages = [29, 32, 36];
+// console.log(ages[2]);
 
-let random = ['Desmond', 6, 'Heather', 29, 'Bryan', 32];
-console.log(random);
+// let random = ['Desmond', 6, 'Heather', 29, 'Bryan', 32];
+// console.log(random);
 
 // console.log(ninjas.length);
 
@@ -146,7 +146,7 @@ console.log(random);
 //browser automatically assigns the value undefined when it doesnt have one
 
 //booleans and comparisons
-console.log(true, false);
+// console.log(true, false);
 
 let emails = 'heather.zurek@gmail.com';
 // let names = ['heather', 'desmond', 'bryan'];
@@ -258,13 +258,13 @@ let result = Boolean(0);
 //     console.log("that's a lot of ninjas");
 // }
 
-const password = 'p@ssw0rd';
+// const password = 'p@ssw0rd';
 
-if(password.length >= 8 && password.includes('5')){
-    console.log('That password is long enough, yay!');
-} else {
-    console.log('Your password needs to be 8 characters long and have an @ symbol');
-} 
+// if(password.length >= 8 && password.includes('5')){
+//     console.log('That password is long enough, yay!');
+// } else {
+//     console.log('Your password needs to be 8 characters long and have an @ symbol');
+// } 
 
 // //control flow continued
 // //logical opertators - OR || and AND &&
@@ -290,22 +290,22 @@ if(password.length >= 8 && password.includes('5')){
 // console.log(!true);
 // console.log(!false);
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+// const scores = [50, 25, 0, 30, 100, 20, 10];
 
 
-for(let i = 0; i <scores.length; i++){
+// for(let i = 0; i <scores.length; i++){
     
-    if(scores[i] === 0) {
-        continue;
-    }
+//     if(scores[i] === 0) {
+//         continue;
+//     }
 
-    console.log('your score: ', scores[i]);
+//     console.log('your score: ', scores[i]);
 
-    if(scores[i] === 100) {
-        console.log('Congrats, you got the top score!!');
-        break;
-    }
-}
+//     if(scores[i] === 100) {
+//         console.log('Congrats, you got the top score!!');
+//         break;
+//     }
+// }
 
 //break, breaks us out of the loop
 
@@ -379,3 +379,11 @@ const speak = function(name = 'Moon', time = 'Night'){ //name is a function para
 
 speak('Petunia');
 //when we pass a value into a function, its known as an argument
+
+//how to return values from functions
+const calcArea = function(radius){
+    return 3.14 * radius**2;
+};
+
+const area = calcArea(5);
+console.log(area);
