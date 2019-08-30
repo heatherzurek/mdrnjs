@@ -69,3 +69,31 @@ const random = Math.random();
 console.log(random);
 console.log(Math.round(random* 100));
 
+//Primitive Types numbers, strings, booleans, null, undefined, symbols
+//stored on the stack
+
+
+//Reference types all types of objects, object literals, arrays, functions, dates, all other objects
+//stored on the heap
+
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+console.log(`scoreOne: ${scoreOne} scoreTwo: ${scoreTwo}`);
+
+scoreOne = 100;
+
+console.log(`scoreOne: ${scoreOne} scoreTwo: ${scoreTwo}`);
+//when you make a copy of primitive values, when you change one, the other doesnt change
+
+//reference values change
+
+const userOne = { name: 'heather', age: 29 };
+const userTwo = userOne;
+
+console.log(userOne, userTwo)
+
+userOne.age = 40;
+
+console.log(userOne, userTwo)
