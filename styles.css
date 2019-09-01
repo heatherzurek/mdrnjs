@@ -10,6 +10,9 @@
     border: 1px dotted limegreen;
 } */
 
+body {
+    background-color: darkolivegreen;
+}
 li {
     list-style-type: none;
     max-width: 200px;

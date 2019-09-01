@@ -114,10 +114,23 @@
 //event listener
 //callback
 
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+//     console.log('you clicked me');
+// });
+
+// const ul = document.querySelector('ul');
+// ul.remove();
+const ul = document.querySelector('ul');
 const button = document.querySelector('button');
 
 button.addEventListener('click', () => {
-    console.log('you clicked me');
+    // ul.innerHTML += '<li>something new</li>';
+    const li = document.createElement('li');
+    li.textContent = 'something new to do';
+    // ul.prepend(li);
+    ul.append(li);
 });
 
 const items = document.querySelectorAll('li');
@@ -128,6 +141,39 @@ items.forEach(item => {
         // console.log(e);
         // console.log(e.target);
         // console.log(item);
-        e.target.style.textDecoration = 'line-through';
+        // e.target.style.textDecoration = 'line-through';
+        e.target.remove();
     });
 });
+
+
+const pets = ['desmond', 'tucker', 'jacob'];
+
+pets.forEach(pet => {
+    console.log(pet);
+});
+
+const plants = ['fern', 'lupine', 'dogwood', 'rose bush'];
+plants.forEach(plant => {
+    console.log(plant);
+});
+
+const dogs = ['corgi', 'german shepard', 'bull terrier', 'lab'];
+
+dogs.forEach(dog => {
+    console.log(dog);
+});
+
+const flowers = ['rose', 'peony', 'daisy', 'dahlia', 'sunflower', 'petunia'];
+
+flowers.forEach(flower => {
+    console.log(flower);
+});
+
+const toDoList = ['walk the dog', 'pay the bills', 'do the laundry', 'wash the car'];
+
+toDoList.forEach(toDo => {
+    console.log(toDo);
+});
+
+//Event bubbling and event delegration
