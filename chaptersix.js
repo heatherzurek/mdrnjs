@@ -122,18 +122,18 @@
 
 // const ul = document.querySelector('ul');
 // ul.remove();
-const ul = document.querySelector('ul');
-const button = document.querySelector('button');
+// const ul = document.querySelector('ul');
+// const button = document.querySelector('button');
 
-button.addEventListener('click', () => {
-    // ul.innerHTML += '<li>something new</li>';
-    const li = document.createElement('li');
-    li.textContent = 'something new to do';
-    // ul.prepend(li);
-    ul.append(li);
-});
+// button.addEventListener('click', () => {
+//     // ul.innerHTML += '<li>something new</li>';
+//     const li = document.createElement('li');
+//     li.textContent = 'something new to do';
+//     // ul.prepend(li);
+//     ul.append(li);
+// });
 
-const items = document.querySelectorAll('li');
+// const items = document.querySelectorAll('li');
 
 // items.forEach(item => {
 //     item.addEventListener('click', e => {
@@ -147,12 +147,12 @@ const items = document.querySelectorAll('li');
 //     });
 // });
 
-ul.addEventListener('click', e => {
-    // console.log('event in ul');
-    if(e.target.tagName === 'LI'){
-        e.target.remove();
-    }
-});
+// ul.addEventListener('click', e => {
+//     // console.log('event in ul');
+//     if(e.target.tagName === 'LI'){
+//         e.target.remove();
+//     }
+// });
 
 
 // const pets = ['desmond', 'tucker', 'jacob'];
@@ -201,3 +201,23 @@ ul.addEventListener('click', e => {
 //     console.log(bigCat);
 // });
 //Event bubbling and event delegration
+
+// const copy = document.querySelector('.copy-me');
+
+// copy.addEventListener('copy', () => {
+//     console.log('OI! my content is copyright');
+// });
+
+// const box = document.querySelector('.box');
+
+// box.addEventListener('mousemove', e => {
+//     // console.log('x: ', e.offsetX);
+//     // console.log('y: ', e.offsetY);
+//     box.textContent = `x position - ${e.offsetX} y position - ${e.offsetY}`;
+// });
+
+
+// document.addEventListener('wheel', e => {
+//     console.log(e.pageX, e.pageY);
+// });
+
