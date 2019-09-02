@@ -135,45 +135,69 @@ button.addEventListener('click', () => {
 
 const items = document.querySelectorAll('li');
 
-items.forEach(item => {
-    item.addEventListener('click', e => {
-        // console.log('item clicked');
-        // console.log(e);
-        // console.log(e.target);
-        // console.log(item);
-        // e.target.style.textDecoration = 'line-through';
+// items.forEach(item => {
+//     item.addEventListener('click', e => {
+//         // console.log('item clicked');
+//         // console.log(e);
+//         // console.log(e.target);
+//         console.log('event in li');
+//         e.stopPropagation();
+//         // e.target.style.textDecoration = 'line-through';
+//         e.target.remove();
+//     });
+// });
+
+ul.addEventListener('click', e => {
+    // console.log('event in ul');
+    if(e.target.tagName === 'LI'){
         e.target.remove();
-    });
+    }
 });
 
 
-const pets = ['desmond', 'tucker', 'jacob'];
+// const pets = ['desmond', 'tucker', 'jacob'];
 
-pets.forEach(pet => {
-    console.log(pet);
-});
+// pets.forEach(pet => {
+//     console.log(pet);
+// });
 
-const plants = ['fern', 'lupine', 'dogwood', 'rose bush'];
-plants.forEach(plant => {
-    console.log(plant);
-});
+// const plants = ['fern', 'lupine', 'dogwood', 'rose bush'];
+// plants.forEach(plant => {
+//     console.log(plant);
+// });
 
-const dogs = ['corgi', 'german shepard', 'bull terrier', 'lab'];
+// const dogs = ['corgi', 'german shepard', 'bull terrier', 'lab'];
 
-dogs.forEach(dog => {
-    console.log(dog);
-});
+// dogs.forEach(dog => {
+//     console.log(dog);
+// });
 
-const flowers = ['rose', 'peony', 'daisy', 'dahlia', 'sunflower', 'petunia'];
+// const flowers = ['rose', 'peony', 'daisy', 'dahlia', 'sunflower', 'petunia'];
 
-flowers.forEach(flower => {
-    console.log(flower);
-});
+// flowers.forEach(flower => {
+//     console.log(flower);
+// });
 
-const toDoList = ['walk the dog', 'pay the bills', 'do the laundry', 'wash the car'];
+// const toDoList = ['walk the dog', 'pay the bills', 'do the laundry', 'wash the car'];
 
-toDoList.forEach(toDo => {
-    console.log(toDo);
-});
+// toDoList.forEach(toDo => {
+//     console.log(toDo);
+// });
 
+// const clothing = ['shirt', 'pants', 'socks', 'jacket', 'hat', 'pajamas'];
+
+// clothing.forEach(clothes => {
+//     console.log(clothes);
+// })
+
+// const nationalParks = ['Mount Rainer', 'Crater Lake', 'Olymic', 'Rocky Mountain', 'Zion', 'Arches'];
+// nationalParks.forEach(park => {
+//     console.log(park);
+// });
+
+// const bigCats = ['tiger', 'cheetah', 'leopard', 'jaguar', 'cougar'];
+
+// bigCats.forEach(bigCat => {
+//     console.log(bigCat);
+// });
 //Event bubbling and event delegration
