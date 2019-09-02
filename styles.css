@@ -31,7 +31,8 @@ li {
     padding: 20px;
 } */
 
-button {
+/* start popup.js  */
+/* button {
     display: block;
     margin: 20px auto;
     background-color: crimson;
@@ -73,7 +74,21 @@ button {
     top: 5px;
     right: 8px;
     cursor: pointer;
+} */
+/* end popup.js */
+
+
+body {
+    background-color: #eee;
 }
-
-
-
+form {
+    max-width: 200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 10px;
+}
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}

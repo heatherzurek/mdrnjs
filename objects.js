@@ -97,3 +97,9 @@ console.log(userOne, userTwo)
 userOne.age = 40;
 
 console.log(userOne, userTwo)
+
+// function transformFirstAndLast(array) {
+//     let first = array[0];
+//     let last = array[array.length - 1];
+//     return {[first]: last};
+//   }
