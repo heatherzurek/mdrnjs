@@ -4,7 +4,7 @@
 //iterates an array and preforms a check on each item inside a callback function
 //if that check passes, its going to keep that item inside the filtered array
 //if it doesnt, it will remove it
-const scores = [10, 30, 15, 25, 50, 40, 5];
+// const scores = [10, 30, 15, 25, 50, 40, 5];
 
 // const filteredScores = scores.filter((score) => {
 //     return score > 20;
@@ -73,3 +73,58 @@ const saleProducts = products.map(product => {
 });
 
 console.log(saleProducts);
+
+//REDUCE METHOD
+//can return any single value based on the values in the array that we iterate over
+//iterates an array
+//preforms callback
+//returns value
+// const scores = [10, 20, 60, 40, 70, 90, 30];
+
+// const overFifty = scores.reduce((acc, curr) => {
+//     if(curr > 50){
+//         acc++;
+//     }
+//     return acc;
+// }, 0);
+
+// console.log(overFifty);
+
+
+const scores = [
+    {player: 'mario', score: 50},
+    {player: 'yoshi', score: 30},
+    {player: 'mario', score: 70},
+    {player: 'crystal', score: 60},
+    {player: 'mario', score: 5},
+    {player: 'yoshi', score: 30},
+    {player: 'mario', score: 4},
+    {player: 'crystal', score: 60}
+]
+
+const marioTotal = scores.reduce((acc, curr) => {
+    if(curr.player === 'mario'){
+        acc += curr.score;
+    }
+    return acc;
+}, 0);
+
+console.log(marioTotal);
+
+//FIND METHOD
+//iterate the array and fire a cb for each item
+//as soon as it passes a certain condition it will return that value
+//and wont carry on
+
+const scoreArr = [10, 5, 0, 40, 50, 20, 60, 40, 70, 90, 30];
+
+const firstHighScore = scoreArr.find((score) => {
+    return score > 50;
+});
+
+console.log(firstHighScore);
+
+
+
+
+
