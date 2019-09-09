@@ -79,7 +79,12 @@ li {
 
 
 body {
-    background-color: #eee;
+    background-color: #a8f3be;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 form {
     max-width: 200px;
