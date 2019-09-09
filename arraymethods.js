@@ -124,7 +124,28 @@ const firstHighScore = scoreArr.find((score) => {
 
 console.log(firstHighScore);
 
+const natParks = ['zion', 'arches', 'rocky mountain', 'olympic'];
+
+const firstPark = natParks.find((park) => {
+    return park === 'olympic';
+});
+
+console.log(firstPark);
 
 
 
+//SORT METHOD
 
+const names = ['mario', 'shaun', 'chun-li', 'yoshi', 'luigi'];
+//doesnt create new array
+//alters directly
+// names.sort();
+names.reverse();
+console.log(names);
+
+
+
+const moreScores = [10, 50, 20, 4, 32, 70, 34];
+
+moreScores.sort();
+console.log(moreScores);
