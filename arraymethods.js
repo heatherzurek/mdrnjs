@@ -149,3 +149,32 @@ const moreScores = [10, 50, 20, 4, 32, 70, 34];
 
 moreScores.sort();
 console.log(moreScores);
+
+const playerScores = [
+    {player: 'mario', score: 50},
+    {player: 'yoshi', score: 30},
+    {player: 'heather', score: 70},
+    {player: 'mary', score: 60},
+    {player: 'john', score: 5},
+    {player: 'yoshi', score: 30},
+    {player: 'brad', score: 4},
+    {player: 'crystal', score: 60}
+];
+
+// playerScores.sort((a,b) => {
+//     if(a.score > b.score){
+//         return -1;
+//     } else if (b.score > a.score){
+//         return 1;
+//     } else {
+//         return 0;
+//     }
+// });
+
+// console.log(playerScores);
+
+playerScores.sort((a,b) => {
+    return b.score - a.score;
+});
+
+console.log(playerScores)
