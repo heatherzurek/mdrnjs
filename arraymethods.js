@@ -42,6 +42,7 @@ const vistedParks = parks.filter((park) => {
 
 console.log(vistedParks);
 
+
 //MAP METHOD
 // takes an array and maps it into a new array
 // iterates an array and returns an updated value and pushes it into a new array
@@ -55,23 +56,23 @@ const salePrices = prices.map(price => {
 
 console.log(salePrices);
 
-const products = [
-    {name: 'gold star', price: 20},
-    {name: 'mushroom', price: 40},
-    {name: 'green shells', price: 30},
-    {name: 'banana skin', price: 10},
-    {name: 'red shells', price: 50},
-];
+// const products = [
+//     {name: 'gold star', price: 20},
+//     {name: 'mushroom', price: 40},
+//     {name: 'green shells', price: 30},
+//     {name: 'banana skin', price: 10},
+//     {name: 'red shells', price: 50},
+// ];
 
-const saleProducts = products.map(product => {
-    if(product.price > 30){
-        return {name: product.name, price: product.price / 2};
-    } else {
-        return product;
-    }
-});
+// const saleProducts = products.map(product => {
+//     if(product.price > 30){
+//         return {name: product.name, price: product.price / 2};
+//     } else {
+//         return product;
+//     }
+// });
 
-console.log(saleProducts);
+// console.log(saleProducts);
 
 //REDUCE METHOD
 //can return any single value based on the values in the array that we iterate over
@@ -88,6 +89,7 @@ console.log(saleProducts);
 // }, 0);
 
 // console.log(overFifty);
+
 
 const scores = [
     {player: 'mario', score: 50},
@@ -130,6 +132,8 @@ const firstPark = natParks.find((park) => {
 
 console.log(firstPark);
 
+
+
 //SORT METHOD
 
 const names = ['mario', 'shaun', 'chun-li', 'yoshi', 'luigi'];
@@ -139,12 +143,13 @@ const names = ['mario', 'shaun', 'chun-li', 'yoshi', 'luigi'];
 names.reverse();
 console.log(names);
 
+
+
 const moreScores = [10, 50, 20, 4, 32, 70, 34];
 
 moreScores.sort();
 console.log(moreScores);
 
-<<<<<<< HEAD
 const playerScores = [
     {player: 'mario', score: 50},
     {player: 'yoshi', score: 30},
@@ -173,5 +178,27 @@ playerScores.sort((a,b) => {
 });
 
 console.log(playerScores)
-=======
->>>>>>> f5f3952c7e6d79e9c2ca5137f9dc5f10b9957b19
+
+
+//CHAINING ARRAY METHODS
+
+const products = [
+    {name: 'gold star', price: 20},
+    {name: 'mushroom', price: 40},
+    {name: 'green shells', price: 30},
+    {name: 'banana skin', price: 10},
+    {name: 'red shells', price: 50},
+];
+
+// const filtered = products.filter(product => product.price > 20);
+
+// const promos = filtered.map(product => {
+//     return `the ${product.name} is ${product.price / 2} dollars`
+// });
+
+const promos = products
+    .filter(product => product.price > 20)
+    .map(product =>  `the ${product.name} is ${product.price / 2} dollars`);
+
+console.log(promos);
+
