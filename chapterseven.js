@@ -6,7 +6,6 @@ const form = document.querySelector('.signup-form');
 const feedback = document.querySelector('.feedback');
 const usernamePattern = /^[a-zA-Z]{6,12}$/;
 
-
 form.addEventListener('submit', e => {
     e.preventDefault();
     //console.log(form.username.value);

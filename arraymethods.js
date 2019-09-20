@@ -42,7 +42,6 @@ const vistedParks = parks.filter((park) => {
 
 console.log(vistedParks);
 
-
 //MAP METHOD
 // takes an array and maps it into a new array
 // iterates an array and returns an updated value and pushes it into a new array
@@ -90,7 +89,6 @@ console.log(saleProducts);
 
 // console.log(overFifty);
 
-
 const scores = [
     {player: 'mario', score: 50},
     {player: 'yoshi', score: 30},
@@ -132,8 +130,6 @@ const firstPark = natParks.find((park) => {
 
 console.log(firstPark);
 
-
-
 //SORT METHOD
 
 const names = ['mario', 'shaun', 'chun-li', 'yoshi', 'luigi'];
@@ -143,13 +139,12 @@ const names = ['mario', 'shaun', 'chun-li', 'yoshi', 'luigi'];
 names.reverse();
 console.log(names);
 
-
-
 const moreScores = [10, 50, 20, 4, 32, 70, 34];
 
 moreScores.sort();
 console.log(moreScores);
 
+<<<<<<< HEAD
 const playerScores = [
     {player: 'mario', score: 50},
     {player: 'yoshi', score: 30},
@@ -178,3 +173,5 @@ playerScores.sort((a,b) => {
 });
 
 console.log(playerScores)
+=======
+>>>>>>> f5f3952c7e6d79e9c2ca5137f9dc5f10b9957b19
